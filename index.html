@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Music Legends</title>
+    <meta name="description" content="Radio Music Legends" />
+
+    <script src="/scripts/svg-inject.min.js"></script>
+
+    <link rel="stylesheet" href="./styles/global.css" />
+  </head>
+
+  <body> 
+    <div class="app">
+      <header>
+        <div class="header__content">
+          <button type="button" id="button__toggle" onclick="handleToggle()">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <nav>
+            <ul id="navigation">
+              <li>
+                <a href="/">Início</a>
+              </li>
+              <li>
+                <a href="/">Buscar</a>
+              </li>
+              <li class="active">
+                <a href="/">Suas bibliotecas</a>
+              </li>
+            </ul>
+          </nav>
+    
+          <h1>music legends</h1>
+    
+          <div class="user">
+            <span>Leo Vargas</span>
+            <div class="user__avatar">
+              <img src="https://github.com/leovargasdev.png" alt="Avatar do usuário">
+            </div>
+          </div>
+        </div>
+      </header>
+  
+      <main>
+        <div class="main__content">
+          <img class="logo" src="/assets/logo.png" alt="Logo da liga das lendas">
+          <strong>riot games</strong>
+
+          <div class="controll">
+            <button type="button" onclick="changeMusic(-1)">
+              <img src="/assets/icons/chevron-left.svg" alt="Ìcone seta para esquerda"  onload="SVGInject(this)">
+            </button>
+            <span></span>
+            <button type="button" onclick="changeMusic(1)">
+              <img src="/assets/icons/chevron-right.svg" alt="Ìcone seta para direita" onload="SVGInject(this)">
+            </button>
+          </div>
+
+          <div class="music__mobile">
+            <div>
+              <h2></h2>
+              <img src="/assets/icons/heart.svg" alt="Ìcone de coração" onload="SVGInject(this)">
+            </div>
+            
+            <h3></h3>
+          </div>
+        </div>
+      </main>
+  
+      <footer>
+        <span id="timeline"></span>
+
+        <div class="footer__content">
+          <div class="music">
+            <img src="/assets/icons/heart.svg" alt="Ìcone de coração" onload="SVGInject(this)">
+            <h2></h2>
+            <h3></h3>
+          </div>
+  
+          <div class="player">
+            <img src="/assets/icons/repeat.svg" alt="Ìcone da ação de repetição" onload="SVGInject(this)">
+
+            <div class="player__main">
+              <button type="button" onclick="changeMusic(-1)">
+                <img src="/assets/icons/chevron-left.svg" alt="Ìcone seta para esquerda" onload="SVGInject(this)">
+              </button>
+
+              <button type="button" onclick="playMusic()" id="button__play" class="play">
+                <img src="/assets/icons/play.svg" alt="Ìcone player" onload="SVGInject(this)">
+                <img src="/assets/icons/pause.svg" alt="Ìcone player" onload="SVGInject(this)">
+              </button>
+
+              <button type="button" onclick="changeMusic(1)">
+                <img src="/assets/icons/chevron-right.svg" alt="Ìcone seta para direita" onload="SVGInject(this)">
+              </button>
+            </div>
+            <img src="/assets/icons/loop.svg" alt="Ìcone da ação de looping" onload="SVGInject(this)">
+          </div>
+  
+          <div class="controller">
+            <img src="/assets/icons/volume.svg" alt="Ìcone para controlar o volume" onload="SVGInject(this)">
+            <img src="/assets/icons/minimize.svg" alt="Ìcone para minimizar a aplicação" onload="SVGInject(this)">
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./scripts/index.js"></script>
+  </body>
+  
+</html>
