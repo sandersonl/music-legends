@@ -1,7 +1,7 @@
 @import url('./app.css');
 @import url('./header.css');
-@import url('./footer.css');
 @import url('./main.css');
+@import url('./footer.css');
 
 @font-face {
   font-family: "GT Eesti Pro Display";
@@ -60,6 +60,6 @@ button {
   border: 0;
 }
 
-button:hover {
-  cursor: pointer;
+button:hover{
+    cursor: pointer;
 }

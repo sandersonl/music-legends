@@ -2,7 +2,7 @@ main {
   flex: 1;
   display: flex;
 
-  background-image: linear-gradient(rgba(0,0,0,0.66), rgba(0,0,0,0.66)), url('/assets/background.png');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.66), rgba(0, 0, 0, 0.66)), url('/assets/background.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -80,6 +80,7 @@ main {
   }
 }
 
+
 @media(max-width: 768px) {
   .main__content {
     padding: 0 24px 72px;
@@ -148,5 +149,4 @@ main {
   .controll button svg {
     width: 16px;
   }
-
 }

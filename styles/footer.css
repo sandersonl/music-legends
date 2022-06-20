@@ -4,23 +4,22 @@ footer {
   position: relative;
 }
 
-#timeline {
+.timeline {
   position: absolute;
-  top: -2px;
+  top: -2;
   left: 0;
-
   display: flex;
   justify-content: flex-end;
-  width: 0;
+  width: 400px;
   height: 4px;
 
   background: linear-gradient(90.35deg, #4AC08F 2.49%, #2FB4FF 101.2%, #2FB4FF 101.2%);
 }
 
-#timeline::before {
+.timeline::before {
   content: '';
-  display: block;
 
+  display: block;
   width: 16px;
   height: 16px;
   border-radius: 50%;
@@ -32,8 +31,8 @@ footer {
 .footer__content {
   width: 100%;
   max-width: 1720px;
-  margin: 0 auto;
   padding: 24px;
+  margin: 0 auto;
 
   display: flex;
   align-items: center;
@@ -86,32 +85,19 @@ footer {
 }
 
 .player .player__main button {
-  background: transparent;
-}
-
-#button__play {
   display: flex;
 
   width: 48px;
   height: 48px;
-  border-radius: 50%;
   padding-left: 3px;
+  border-radius: 50%;
   background: var(--background-light);
 }
 
-#button__play svg {
+.player .player__main button svg {
   width: 18px;
   height: auto;
   margin: auto;
-
-  display: none;
-  opacity: 0;
-}
-
-#button__play.play svg:first-child,
-#button__play.pause svg:last-child {
-  opacity: 1;
-  display: block;
 }
 
 .controller {
