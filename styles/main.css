@@ -80,7 +80,6 @@ main {
   }
 }
 
-
 @media(max-width: 768px) {
   .main__content {
     padding: 0 24px 72px;
